@@ -1,12 +1,137 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GoradPhish</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<h1>GORADPHISH(TOOLS FOR PHISHING)</h1>
 <body>
-    
+
+    <style>
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+.hero {
+    background: linear-gradient(45deg, #1e293b, #0f172a);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+.hero .btn {
+    background: #3b82f6;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.hero .btn:hover {
+    background: #2563eb;
+}
+
+/* Features section */
+.features {
+    background: #f8fafc;
+    padding: 50px 20px;
+}
+.features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.feature-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.feature-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #1e293b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.feature-item {
+    transition: transform 0.3s ease-in-out;
+}
+.feature-item:hover {
+    transform: scale(1.05);
+}
+
+    </style>
+
+
+
+<header class="hero">
+        <div class="container">
+            <h1>GoradPhish</h1>
+            <p>L'outil ultime pour tester vos défenses contre les attaques de phishing.</p>
+            <a href="#features" class="btn">Découvrir les fonctionnalités</a>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Fonctionnalités principales</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <img src="phishing-simulation.png" alt="Simulation d'attaques">
+                    <h3>Simulations réalistes</h3>
+                    <p>Créez des scénarios de phishing personnalisés pour sensibiliser vos équipes.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="analytics.png" alt="Analyse">
+                    <h3>Analyse des résultats</h3>
+                    <p>Suivez les performances et identifiez les failles de sécurité.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="mobile-friendly.png" alt="Compatibilité mobile">
+                    <h3>Compatibilité mobile</h3>
+                    <p>Testez sur tous les appareils, des ordinateurs de bureau aux smartphones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GoradPhish. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
