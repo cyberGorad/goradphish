@@ -1,6 +1,5 @@
 pkg install git 
 pkg install python
-
 pip install schedule
 pip install mysql-connector-python
 pip install colorama
