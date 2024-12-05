@@ -17,10 +17,11 @@ ttl.afficher_titre()
 # Configurations de la connexion MySQL
 
 config = {
-    'host': 'mysql-tsilavina.alwaysdata.net',
-    'user': 'tsilavina',
-    'password': 'tsilavina2610tsilavina2610',
-    'database': 'tsilavina_2610'
+    #CONFIDENTIELLE
+    'host': '',
+    'user': '',
+    'password': '',
+    'database': ''
 }
 
 
