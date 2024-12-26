@@ -18,10 +18,10 @@ ttl.afficher_titre()
 
 config = {
     #CONFIDENTIELLE
-    'host': 'fdb1029.awardspace.net',
-    'user': '4565581_hacking',
-    'password': 'hackerforever2610',
-    'database': '4565581_hacking'
+    'host': 'mysql-tsilavina.alwaysdata.net',
+    'user': 'tsilavina',
+    'password': 'tsilavina2610tsilavina2610',
+    'database': 'tsilavina_2610'
 }
 
 
