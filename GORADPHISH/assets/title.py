@@ -11,7 +11,7 @@ def afficher_titre():
     titre = pyfiglet.figlet_format("GORADPHISH")
     
     print("Auteur:cybergorad")
-    print("version:1.0.0") 
+    print("version:1.0.1") 
     print("")
     print("")
 
